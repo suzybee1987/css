@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.pic {
+    width: 100%;
+}
+
+.pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.photo-gallery {
+    display: contents;
+    align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .pic {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .pic {
+        max-width: 25%;
+    }
+}

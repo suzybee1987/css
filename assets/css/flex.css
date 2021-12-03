@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* flex-flow is a combination of flex-direction and flex-wrap 
+    eg 
+    flex-flow: row wrap;
+    is the same as above */
+}
+
+.pic {
+    width: 100%;
+}
+
+.pic img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.photo-gallery {
+    display: contents;
+    align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .pic {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .pic {
+        max-width: 25%;
+    }
+}
+
+
